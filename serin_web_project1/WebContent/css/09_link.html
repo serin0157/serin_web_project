@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Links</title>
+	<style>
+		a{
+			border:1px solid red;
+		}
+		hr{margin-bottom:20px;}
+		a:link{
+			color:green;
+			text-decoration-line:none;
+			padding:10px 30px;
+			/* inline인 text여서 기준점이 없어 margin을 줄 수 없다.margin을 주려면 hr을 기준으로 margin을 주어야 한다. */
+			background-color:yellow;
+		}
+		a:hover{
+			color:white;
+			/* text-decoration-line:underline; */
+			background:mediumseagreen;
+		}
+		a:active{
+			color:powderblue;
+			text-decoration-line:none;
+		}
+		a:visited{
+			color:tomato;
+			text-decoration:underline;
+		}
+	</style>
+</head>
+<body>
+	<h1>Links - 'a' element</h1>
+	<hr>
+		<a href="http://naver.com" target="_blank">Naver</a>
+		<a href="http://google.com" target="_blank">Google</a>
+		<a href="http://daum.com" target="_blank">Daum</a>
+</body>
+</html>

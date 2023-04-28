@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Margin Auto</title>
+	<style>
+		*{
+			margin:0px; padding:0px;
+		}
+		header,section,footer{  
+			width:800px;
+			margin:auto;
+		}
+		header{
+			background:green;
+			height:300px;
+		}
+		.content{
+			background:tomato;
+			width:100%;			
+			height:500px;
+		}
+		section{
+			background:blue;
+			height:500px;
+		}
+		footer{
+			background-color:powderblue;
+			height:200px;
+		}
+	</style>
+	
+</head>
+<body>
+	<header>
+		<h1>Margin Auto - Layout</h1>
+		<!-- h1이 header 안에 있으므로 부모인 header의 기준으로 50% 고정이 된다/ header가 800px이므로 h1은 400px을 가진다.  -->
+	</header>
+	
+	<div class="content">
+		<section>
+			<h1>content</h1>
+		</section>
+		<!-- section을 사용하여 안에 있는 content를 가운데 정렬로 할 수 있다./ section을 margin:auto처리를 해야 한다. -->
+	</div>
+	<footer>
+		<h1>footer</h1>		
+	</footer>
+</body>
+</html>

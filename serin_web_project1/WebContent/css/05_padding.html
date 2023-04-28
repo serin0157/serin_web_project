@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Padding</title>
+	<style>
+		p,button, span{
+			background:tomato;
+			padding:10px;
+		}
+		p{width:500px; height:100px;}
+		button{width:250px; height:70px;}
+		span{
+/* 				width:250px; height:70px;
+				display:inline-block; */
+				padding:20px 30px;
+				}
+		a{ background :green;
+			padding:10px 20px;
+			}
+	</style>
+</head>
+<body>
+	<h1>Padding</h1>
+	<p>Block-level Element</p>
+	<button>Inline-Block-level Element</button>
+	<span>Inline-level Element</span>
+	<!-- inline인 span태그와 a태그가 width, height가 적용되지 않는다.
+		 inline block으로 바꾸거나block 타입으로 해야 한다. -->
+		 <a href="#">네이버</a>
+		 <a href="#">구글</a>
+</body>
+</html>

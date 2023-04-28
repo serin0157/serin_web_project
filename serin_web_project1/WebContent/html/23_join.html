@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>회원가입 폼</title>
+</head>
+<body>
+	<h1>회원가입</h1>
+	<form action="#" method = "get">
+		<ul>
+			<li>
+				<lable>아이디</lable>
+				<input type ="text" name="id" placeholder ="*영문자숫자포함8자리이상">
+				<button type = "button">중복확인</button>
+			</li>
+			<li>
+				<label>비밀번호</label>
+				<input type = "password" name="pass"> 
+			</li>
+			<li>
+				<label>비밀번호 확인</label>
+				<input type = "password" name="cpass">
+			</li>
+			<li>
+				<label>성명</label>
+				<input type ="text" name="name">
+			</li>
+			<li>
+				<label>성별</label>
+					<input type="radio" name="gender" value="남자">남자
+					<input type="radio" name="gender" value="여자">여자
+			</li>
+			<li>
+				<label>이메일</label>
+				<input type ="text" name="email1">@
+				<input type ="text" name="email2">
+				<select>
+						<option value=default>선택</option> 
+						<option value ="naver">naver.com</option>
+						<option value="google">gmail.com</option> 
+						<option value="daum">daum.com</option> 
+						<option value="nate">nate.com</option> 
+					</select>
+			</li>
+			<li>
+				<label>주소</label>
+				<input type ="text" name="address1">
+				<button type = "button">주소찾기</button>
+			</li>
+			<li>
+				<label>상세주소    </label>
+				<input type ="text" name="address2">
+			</li>
+			<li>
+				<label>휴대폰</label>
+					<input type="radio" name="phone" value="SKT">SKT
+					<input type="radio" name="phone" value="LGU+">LGU+
+					<input type="radio" name="phone" value="KT">KT
+					
+					<select name="tel">
+						<option value=default>선택</option> 
+						<option value ="010">010</option>
+						<option value="011">011</option> 
+					</select>
+					- <input type ="text" name="number1">
+					- <input type ="text" name="number2">
+			</li>
+			<li>
+				<label>취미</label>
+					<input type="checkbox" name ="hobby" value ="영화">영화보기
+					<input type="checkbox" name ="hobby" value ="등산하기">등산하기
+					<input type="checkbox" name ="hobby" value ="게임하기">게임하기
+					<input type="checkbox" name ="hobby" value ="잠자기">잠자기
+			</li>
+			<li>
+				<label>자기소개</label>
+				<textarea rows="5" cols="50" name="intro">*200자 이내로 작성해주세요</textarea>
+			</li>
+			<li>
+				<button type = "button">가입하기</button>
+				<button type="reset">다시입력</button>
+			</li>
+		</ul>	
+	</form>
+</body>
+</html>

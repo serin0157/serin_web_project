@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Form</title>
+	<style>
+	
+		ul{
+			border:1px solid green;
+			list-style-type:none;
+			padding:0px;
+			margin:0px;
+			width:500px;
+		}
+		label{
+			border:1px solid gray;
+			display:inline-block;
+			width:100px;
+			padding:5px 0px;
+			text-align:center;
+			font-size:12px;
+			background:gray;
+			color:white;
+			border-radius:3px;
+			margin-right:5px;
+		}
+		input{
+			border:1px solid lightgray;
+			width:50%;
+			padding: 3px 5px;
+			border-radius:3px;
+			vertical-align:top;
+			text-indent:10px;
+			transition:0.5s;
+			outline:none;
+		}
+		input:focus{
+			border:1px solid yellow;
+		}
+		li{
+			margin:5px 0px;
+			text-align:center;
+		}
+		li:first-child, li:last-child{
+			/* border:1px solid blue; */
+			margin-top:20px;
+		}
+		button{
+			width:100px;
+			padding:5px;
+			font-size:12px;
+			background:mediumseagreen;
+			color:white;
+			border:1px double lightgray;
+			cursor:pointer;
+		}
+		li:last-child{
+			padding-left:40px;
+		}
+	</style>
+		
+</head>
+<body>
+	<h1>login Form</h1>
+	<form name="Loginform" action="#" method="get">
+		<ul>
+			<li>
+				<label>ID</label>
+				<input type="text" name="id">
+			</li>
+			<li>
+				<label>Password</label>
+				<input type="password" name="pass">
+			</li>
+			<li>
+				<button type="button">Login</button>
+				<button type="reset">Cancle</button>
+			</li>
+		</ul>
+	</form>
+</body>
+</html>

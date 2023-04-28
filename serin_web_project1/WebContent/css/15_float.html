@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Float/Clear</title>
+	<style>
+		/* div 태그의 배경색 : 토마토, 글자색 : 흰색 */
+		div{
+			background:tomato;
+			color:white;
+			border:1px solid green;
+			width:100px;
+			padding:20px 0px;
+			text-align:center;
+			/* display:inline-block; */
+			float:left; /* 왼쪽을 기준으로 해서 칸 사이의 공백을 없애줌 */
+		}
+		.d6{
+			background:green;
+			clear:both; /* 오른쪽 왼쪽 양쪽에 적용하기 위해 both 사용 */
+		}
+		p{
+			background:blue;
+			width:200px;
+			padding:20px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Float/Clear</h1>
+	<div>div 1</div>
+	<div>div 2</div>
+	<div>div 3</div>
+	<div>div 4</div>
+	<div>div 5</div>
+	<div class="d6">div 6</div> <!-- div를 여러개 생성해도 맨 처음에 생성한 div 1을 계속 따라가 붙는다. -->
+	<p> P 태그</p>					
+	<div class="d7">div 7</div>
+</body>
+</html>

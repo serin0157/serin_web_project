@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - List</title>
+	<style>
+			*{
+				font-family:"나눔고딕";
+				/* margin:0px; 
+				padding:0px; */ /* 기본적으로 주는 margin과 padding을 없애준다. */
+				
+			}
+		ul.u1{/* ul 태그 중에 클래스가 u1인 태그(띄어쓰기하면 적용되지 않음 !주의!) */
+			border:1px solid red;
+			list-style-type:circle;
+ 			padding:20px;
+ 			background:#ff9999;
+	}
+		ul.u1 li{ /*u1태그의 클래스가 u1인 태그에서 모든 자식인 li태그를 말한다.  */
+			border:1px solid blue;
+			background:#ffe5e5;
+			margin:5px;
+			padding-left:5px;
+		}
+		ul.u2{
+			border:1px solid red;
+			list-style-type:none;
+			padding:0px;
+		}
+		ul.u2 li{
+			/* border:1px solid blue; */
+			/* display:inline-block; */
+			/* padding:5px; */
+			width:100px;
+			text-align:center;
+			/* margin-right:15px;  */
+			float:left;
+		}
+		ul.u2 a {/* a태그의 크기를 늘려 글자 이외의 겉에도 선택되도록 한다. */
+			
+			font-size:12px;
+			color:white;
+			text-decoration:none;
+			display:inline-block;
+			width:100px;
+			background:tomato;
+			padding:10px 5px;
+			margin-right:5px;
+			border:1px solid lightgray;
+/* 			border:1px solid green; 글자의 공간만 갖고 있기 때문에 글자 정렬을 할 수 없다 -> li 태그에서 적용해야 함 */
+		}
+		
+		
+		ul.u2 li:nth-child(1){ /* ul테이블에 u2클래스에서 li의 자식인 1번째 */
+			/* background:tomato; */
+			margin-left:30px;
+		
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>List - UL, OL</h1>
+	<ul class="u1">
+		<li>JAVA</li>
+		<li>Oracle</li>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>JavaScript</li>
+	</ul>
+	
+	<h3>Navigation Menu</h3>
+	<ul class="u2">
+		<li><a href="#">로그인</a></li>
+		<li><a href="#">회원가입</a></li>
+		<li><a href="#">마이페이지</a></li>
+		<li><a href="#">공지사항</a></li>
+		<li><a href="#">게시판</a></li>
+		<li><a href="#">관리자</a></li>
+		<!-- a태그에만 클릭이 적용되기 때문에 a태그의 사이즈를 버튼에 맞춰준다. -->
+	</ul>
+</body>
+</html>

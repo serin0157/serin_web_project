@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+		
+		<!-- 테이블 겉에만 적용 -->
+	<style>
+		table, th, td{
+			border:1px solid gray;
+			border-collapse:collapse;/*테이블 사이의 공백 삭제*/
+		}
+		th, td{
+			font-size:12px;
+			/* 표 사이의 간격 늘리기 */
+/* 			padding-top:10px;
+			padding-right:10px;
+			padding-bottom:10px;
+			padding-left:10px; 
+			각각 적용 시*/
+			
+			/* padding: t r b l;
+			padding: 10px; 전체 적용 시*/
+			padding :10px 20px;/* top,bottom:10px, right,left: 20px; 묶어서 적용 시*/
+		}
+		tr:nth-child(even) {
+			background-color: #D6EEEE;
+		}/*로우의 개수를 가져와 짝수 홀수를 구분한 뒤 색을 준다 */
+		
+	</style>
+</head>
+<body>
+<table><!-- 테이블 전체에 적용  -->
+	<h1>주소록</h1>
+	<tr>
+		<!-- <th>번호</th> -->
+		<th colspan = 2>번호/성명</th>
+		<th>연락처</th>
+		<th>주소</th>
+	</tr>
+	<tr>
+		<td rowspan=2>1</td>
+		<td>홍길동</td>
+		<td>010-1234-7894</td>
+		<td>서울시 강남구 역삼동</td>
+	</tr>
+	<tr>
+		<!-- <td>2</td> -->
+		<td>홍길순</td>
+		<td>010-1234-7895</td>
+		<td>서울시 마포구 </td>
+	</tr>
+	<tr>
+		<td>3</td>	
+		<td>홍길동동</td>	
+		<td>010-4567-4567</td>	
+		<td>부산시 해운대구</td>	
+	</tr>
+</table>
+</body>
+</html>

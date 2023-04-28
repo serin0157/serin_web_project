@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Links</title>
+	<style>
+		*{
+			font-family:"나눔고딕"; font-weight:bold;
+		}
+		div{
+			border:1px solid tomato;
+			display:inline-block;/* inline-block 타입이여서 margin이 적용된다. */
+			margin:10px;
+			padding:10px 30px; /* 글자의 개수에 따라 크기가 조금씩 다를 수 있다. width로 지정 */
+			width:100px;
+			text-align:center;
+		}
+		div:hover{
+			background:yellow;
+			cursor:pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Links</h1>
+	<hr>
+	<div onclick="test()" >네이버</div> <!-- 네이버를 클릭 시 자바스크립트에 있는 test()로 이동하게 한다  -->
+	<div>구글</div>
+	<div>다음</div>
+	<script>
+		function test(){
+			location.href="http://www.naver.com";
+			
+		}
+	</script>
+</body>
+</html>

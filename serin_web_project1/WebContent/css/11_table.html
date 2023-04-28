@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CSS - Table</title>
+	<style>
+		*{
+			font-family:"나눔고딕";
+		}
+		table{
+			width:70%;
+			height:360px; /* height는 내용을 넣을 때마다 스크롤바가 생겨 크기가 늘어나기때문에 크기가 고정되지 않아 %를 사용할 수 없다. */
+		}
+		table, th, td{
+			border:1px solid #ff9999;
+			/* border은 컨텐츠(데이터)를 갖고 있을 때만 생성된다. */
+			border-collapse:collapse; /* 테이블 사이사이의 공간을 합쳐준다. */
+		}
+		td{
+			text-align:center;
+		}
+		th{
+			color:#ff9999;
+		}
+		tr:first-child{
+			background:#ffe5e5;
+		}
+		tr td:nth-child(2) {
+			width:450px;
+			text-align:left;
+			text-indent:30px;/* 들여쓰기 하여 다른 행을 밀어내지 않는다 */
+			/* padding-left:15px; 사이즈가 커지면 다른 행을 밀어내서 공간을 차지함*/
+		}
+		
+		tr:last-child td{
+			/* background:#ffe5e5; */
+			border-color:white;
+			border-top:#ff9999;
+			background:white;
+		}
+		/*짝수 : even / 홀수 : odd  */
+		tr:nth-child(even){
+			background:#ff9999;
+		}
+		tr:hover{
+			background:tomato;
+			color:white;
+		}
+	</style>
+</head>
+<body>
+	<h1>공지사항</h1>
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>조회수</th>
+			<th>등록</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>4</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>7</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>8</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>9</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td>10</td>
+			<td>[공지] CGV 사이트 점검 예정입니다.</td>
+			<td>123</td>
+			<td>2023-04-20</td>
+		</tr>
+		<tr>
+			<td colspan="4"><<  1  2  3  4  5  >></td>
+		</tr>
+		
+	</table>
+</body>
+</html>
