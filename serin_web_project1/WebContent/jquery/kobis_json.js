@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-	const kobis = {"boxOfficeResult":{"boxofficeType":"일별 박스오피스",
+/*	const kobis = {"boxOfficeResult":{"boxofficeType":"일별 박스오피스",
 									  "showRange":"20230502~20230502",
 									  "dailyBoxOfficeList":[{"rnum":"1","rank":"1","rankInten":"0","rankOldAndNew":"OLD",
 										  					 "movieCd":"20227890","movieNm":"슈퍼 마리오 브라더스",
@@ -79,14 +79,34 @@ $(document).ready(function(){
 			  												  "salesAmt":"11138275","salesShare":"0.9","salesInten":"-1264480",
 			  												  "salesChange":"-10.2","salesAcc":"166066039","audiCnt":"1392",
 			  												  "audiInten":"93","audiChange":"7.2","audiAcc":"18667",
-			  												  "scrnCnt":"161","showCnt":"207"}]}}
-	
-		let movie = "<h1>"+ kobis.boxOfficeResult.boxofficeType +"</h1>";
-			movie += "<h2>"+ kobis.boxOfficeResult.showRange+ "</h2>";
-
+			  												  "scrnCnt":"161","showCnt":"207"}]}}*/
 		
-
 	
+	
+	
+		let boxOffice = kobis.boxOfficeResult;
+		let output = "<h1> 제목 : "+ boxOffice.boxofficeType +"</h1>";
+			output += "<h3> 기간 : "+ boxOffice.showRange+ "</h3>";
+			output += "<table border=1>";
+			output += "<tr>";
+			output += "<th>순위</th>";
+			output += "<th>영화제목</th>";
+			output += "<th>개봉일</th>";
+			output += "<th>누적관객수</th>";
+			output += "<th>상영횟수</th>";
+			output += "</tr>";
+			for(list of boxOffice.dailyBoxOfficeList){
+				output += "<tr>";
+				output += "<td>"+ list.rank +"</td>";
+				output += "<td>"+ list.movieNm +"</td>";
+				output += "<td>"+ list.openDt +"</td>";
+				output += "<td>"+ list.audiAcc +"</td>";
+				output += "<td>"+ list.showCnt +"</td>";
+				output += "</tr>";
+			}
+			output += "</table>";
+			
+		$("body").append(output);
 	
 });
 
